@@ -1,5 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { routes } from 'core/router/routes';
 
 export const LoginScene: React.FC = () => {
-  return <div>Hello from login scene</div>;
+  return (
+    <>
+      <h1>Hello from Login Scene!</h1>
+      <Link to={routes.submoduleList}>Navigate to submodule list</Link>
+    </>
+  );
 };

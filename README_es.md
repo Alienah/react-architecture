@@ -28,3 +28,11 @@ npm install @types/react-router-dom --save-dev
 - scenes
 
 3. Creando scenes
+
+Inicialmente solo definimos qué escenas queremos tener de momento y añadimos unfichero con un componente vacío para delimitar esas escenas.
+
+4. Creando el core
+
+Iniciamos con las rutas
+
+- Creamos la carpeta router: y definimos las rutas tanto de switch como de link

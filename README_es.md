@@ -36,3 +36,28 @@ Inicialmente solo definimos qué escenas queremos tener de momento y añadimos u
 Iniciamos con las rutas
 
 - Creamos la carpeta router: y definimos las rutas tanto de switch como de link
+
+5. Definimos alias para las carpetas:
+
+```json
+//tsconfig
+"baseUrl": "./src/",
+"paths": {
+  "core": ["core"],
+  "scenes": ["scenes"]
+}
+```
+
+```js
+//webpack config
+
+resolve: {
+  extensions: ['.js', '.ts', '.tsx'],
+  alias: {
+    core: helpers.resolveFromRootPath('src/core'),
+    scenes: helpers.resolveFromRootPath('src/scenes'),
+  },
+},
+```
+
+Y ya podríamos acceder a los archivos dentro de scenes con solo poner ' scenes '
